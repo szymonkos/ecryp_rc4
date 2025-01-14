@@ -1,5 +1,7 @@
-# ECRYP Project
-## RC4 cipher
+Szymon Kos 295816
+
+# ECRYP Project - RC4 cipher
+
 RC4 stands for Rivest Cipher 4 is a symmetric stream cipher developed by Ron Rivest from RSA
 Security in 1987. This specific cipher is remarkable for its simplicity and speed in software
 applications. However, toady this cipher is considered insecure due to many vulnerabilities
