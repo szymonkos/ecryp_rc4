@@ -85,7 +85,11 @@ Even though description and code of RC4 were leaked in 1994 and RC4 is no longer
 still exact documentation of RC4 is restricted, so there are no officially available test vectors.
 However, Wikipedia provides three test vectors, that are treated as perfect samples by community.
 
-Table
+| Key        | Keystream                    | Plaintext      | Ciphertext                   |
+| ---------- | ---------------------------- | -------------- | ---------------------------- |
+| Key        | EB9F7781B734CA72A719 . . .   | Plaintext      | BBF316E8D940AF0AD3           |
+| Wiki       | 6044DB6D41B7 . . .           | pedia          | 1021BF0420                   |
+| Sectet     | 04D46B053CA87B59 . . .       | Attack at dawn | 45A01F645FC35B383552544B9BF5 |
 
 Here are my results for keys and plaintexts given above:
 ```
@@ -98,7 +102,7 @@ eb9f7781b734ca72a7
 Cipher in hexadecimal notation:
 bbf316e8d940af0ad3
 Cipher in unicode:
-['>>', 'ó', '\x16', 'ę', 'U', '@', '_', '\n', 'Ó']
+['»', 'ó', '\x16', 'è', 'Ù', '@', '¯', '\n', 'Ó']
 
 Process finished with exit code 0
 ```
@@ -113,7 +117,7 @@ Key stream in hexadecimal notation:
 Cipher in hexadecimal notation:
 1021bf0420
 Cipher in unicode:
-['\x10', '!', '?', '\x04', ' ']
+['\x10', '!', '¿', '\x04', ' ']
 
 Process finished with exit code 0
 ```
@@ -128,7 +132,7 @@ Key stream in hexadecimal notation:
 Cipher in hexadecimal notation:
 45a01f645fc35b383552544b9bf5
 Cipher in unicode:
-['E', '\xa0', '\x1f', 'd', '_', 'Ą', '[', '8', '5', 'R', 'T', 'K', '\x9b', 'ó']
+['E', '\xa0', '\x1f', 'd', '_', 'Ã', '[', '8', '5', 'R', 'T', 'K', '\x9b', 'õ']
 
 Process finished with exit code 0
 ```
